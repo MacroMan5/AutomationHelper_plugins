@@ -1,0 +1,121 @@
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js (if used in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python (if used in future)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+ENV/
+env/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Development
+.env
+.env.local
+.env.*.local
+secrets/
+private/
+*.key
+*.pem
+*.p12
+
+# Test files
+test-output/
+coverage/
+.nyc_output/
+
+# Claude Code specific
+# Note: .claude/ directory is INCLUDED (contains skills and agents)
+# Only exclude local user settings that shouldn't be shared
+.claude/local-settings.json
+.claude/user-preferences.json
+
+# Build artifacts
+dist/
+build/
+*.bundle.js
+*.min.js
+
+# Documentation build (if using static site generator)
+docs/_build/
+site/
+
+# Backup files
+*.backup
+*.back
+*_backup.*
+
+# Personal notes (optional - uncomment if you don't want to commit personal notes)
+# NOTES.md
+# TODO-personal.md
+
+# Flow and error files from debugging (these should not be committed)
+flow.json
+erreur.json
+error.json
+error_bloc.json
+erreur_bloc.json
+fix_bloc.json
+fixed_flow.json
+workflow_error.json
+
+# Exception: Allow example files
+!examples/*.json
+!.claude/skills/*/EXAMPLE.md
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS generated files
+Icon?

@@ -1,0 +1,52 @@
+{
+  "name": "automation-helper-marketplace",
+  "owner": {
+    "name": "TheRouxe",
+    "email": "[email protected]",
+    "url": "https://github.com/therouxe"
+  },
+  "metadata": {
+    "description": "AI assistant for Power Automate and n8n workflows - in active development",
+    "version": "0.1.0",
+    "homepage": "https://github.com/therouxe/automation-helper",
+    "documentation": "https://github.com/therouxe/automation-helper#readme"
+  },
+  "plugins": [
+    {
+      "name": "automation-helper",
+      "source": ".",
+      "description": "AI assistant for Power Automate and n8n workflows. 6 skills in active development. Documentation-driven (no hallucinations). Power Automate: 4 connectors complete. n8n: Core nodes complete. Make/Zapier: Not yet supported. Contributions, issues, and forks welcome!",
+      "version": "0.1.0",
+      "author": {
+        "name": "TheRouxe",
+        "email": "[email protected]"
+      },
+      "keywords": [
+        "power-automate",
+        "n8n",
+        "make",
+        "zapier",
+        "workflow",
+        "automation",
+        "debugging",
+        "refactoring",
+        "optimization",
+        "flow-builder",
+        "no-code",
+        "low-code"
+      ],
+      "category": "automation",
+      "tags": [
+        "workflow",
+        "automation",
+        "power-automate",
+        "n8n",
+        "debugging",
+        "optimization"
+      ],
+      "homepage": "https://github.com/therouxe/automation-helper",
+      "repository": "https://github.com/therouxe/automation-helper",
+      "license": "MIT"
+    }
+  ]
+}

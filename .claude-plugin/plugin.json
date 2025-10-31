@@ -1,0 +1,37 @@
+{
+  "name": "automation-helper",
+  "version": "0.1.0",
+  "description": "AI assistant for Power Automate and n8n workflows. 6 skills in active development: design, build, debug, quick-fix, refactor, and validate. Documentation-driven approach (no hallucinations). Contributions welcome!",
+  "author": {
+    "name": "TheRouxe",
+    "email": "[email protected]",
+    "url": "https://github.com/therouxe"
+  },
+  "homepage": "https://github.com/therouxe/automation-helper",
+  "repository": "https://github.com/therouxe/automation-helper",
+  "license": "MIT",
+  "keywords": [
+    "power-automate",
+    "n8n",
+    "make",
+    "zapier",
+    "workflow",
+    "automation",
+    "debugging",
+    "refactoring",
+    "optimization",
+    "flow-builder",
+    "no-code",
+    "low-code",
+    "integration",
+    "connector",
+    "rpa"
+  ],
+  "agents": [
+    "./.claude/agents/flow-builder.md",
+    "./.claude/agents/docs-researcher.md",
+    "./.claude/agents/flow-debugger.md",
+    "./.claude/agents/flow-documenter.md"
+  ],
+  "skills": "./.claude/skills/"
+}
