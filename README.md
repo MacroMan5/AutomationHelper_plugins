@@ -31,11 +31,11 @@ This plugin adds 6 AI skills to Claude Code that help you work with automation w
 - SharePoint (20% - needs work)
 - OneDrive (20% - needs work)
 
-✅ **n8n (Core Only)**
-- Core nodes (HTTP, Webhook, Code, Schedule)
-- AI nodes (OpenAI, Anthropic basics)
-- Some app integrations
-- Database nodes (basic)
+✅ **n8n (Core + Database)**
+- Core nodes (HTTP, Webhook, Code, Schedule, Set, IF - 6/15 nodes)
+- AI nodes (OpenAI - 1/10 nodes)
+- App integrations (Google Sheets, Drive, Gmail - 3/300 nodes)
+- Database nodes (PostgreSQL, Redis, Pinecone - 3/10 nodes)
 
 ❌ **Not Yet Supported**
 - Make/Integromat
@@ -156,16 +156,30 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 ```
 Docs/
 ├── PowerAutomateDocs/
-│   ├── Forms/         ✅ Complete
-│   ├── Excel/         ✅ Complete
-│   ├── Outlook/       ✅ Complete
-│   ├── Teams/         ✅ Complete
+│   ├── Forms/         ✅ Complete (100%)
+│   ├── Excel/         ✅ Complete (100%)
+│   ├── Outlook/       ✅ Complete (100%)
+│   ├── Teams/         ✅ Complete (100%)
 │   ├── SharePoint/    🚧 20% (needs expansion)
 │   └── OneDrive/      🚧 20% (needs expansion)
 └── N8NDocs/
-    ├── Core/          ✅ Basic coverage
-    ├── AI/            ✅ Basic coverage
-    └── Apps/          🚧 Partial
+    ├── Core/          ✅ Growing (6/15 = 40%)
+    │   ├── HTTP Request ✅
+    │   ├── Webhook ✅
+    │   ├── Code ✅
+    │   ├── Schedule ✅
+    │   ├── Set ✅
+    │   └── IF ✅
+    ├── AI/            ✅ Started (1/10 = 10%)
+    │   └── OpenAI ✅
+    ├── Apps/          ✅ Started (3/300 = 1%)
+    │   ├── Google Sheets ✅
+    │   ├── Google Drive ✅
+    │   └── Gmail ✅
+    └── Database/      ✅ Started (3/10 = 30%)
+        ├── PostgreSQL ✅
+        ├── Redis ✅
+        └── Pinecone ✅
 ```
 
 ## Skills Overview
@@ -220,7 +234,9 @@ Docs/
 
 - **Skills**: 6 (all in alpha)
 - **Agents**: 4 sub-agents
-- **Documentation**: 100+ files (mostly Power Automate)
+- **Documentation**: 17 comprehensive node files (100,600+ lines)
+- **N8N Nodes Documented**: 13 of 1835+ (6 Core, 1 AI, 3 App, 3 Database)
+- **Documentation Coverage**: 0.7% of all N8N nodes, 74% of high-priority nodes
 - **Status**: Active development
 - **Contributors**: Looking for more!
 
