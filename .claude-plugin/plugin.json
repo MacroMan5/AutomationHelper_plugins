@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "AI assistant for Power Automate and n8n workflows. 6 skills in active development: design, build, debug, quick-fix, refactor, and validate. Documentation-driven approach (no hallucinations). Contributions welcome!",
   "author": {
-    "name": "TheRouxe",
+    "name": "MacroMan5",
     "email": "[email protected]",
-    "url": "https://github.com/therouxe"
+    "url": "https://github.com/MacroMan5"
   },
-  "homepage": "https://github.com/therouxe/automation-helper",
-  "repository": "https://github.com/therouxe/automation-helper",
+  "homepage": "https://github.com/MacroMan5/AutomationHelper_plugins",
+  "repository": "https://github.com/MacroMan5/AutomationHelper_plugins",
   "license": "MIT",
   "keywords": [
     "power-automate",
