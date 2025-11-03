@@ -1,6 +1,6 @@
 {
   "name": "automation-helper",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha",
   "description": "AI assistant for Power Automate and n8n workflows. 6 skills in active development: design, build, debug, quick-fix, refactor, and validate. Documentation-driven approach (no hallucinations). Contributions welcome!",
   "author": {
     "name": "MacroMan5",

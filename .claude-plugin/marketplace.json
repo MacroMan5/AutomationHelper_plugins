@@ -7,16 +7,16 @@
   },
   "metadata": {
     "description": "AI assistant for Power Automate and n8n workflows - in active development",
-    "version": "0.1.0",
+    "version": "0.1.0-alpha",
     "homepage": "https://github.com/MacroMan5/AutomationHelper_plugins",
     "documentation": "https://github.com/MacroMan5/AutomationHelper_plugins#readme"
   },
   "plugins": [
     {
       "name": "automation-helper",
-      "source": ".",
+      "source": "./",
       "description": "AI assistant for Power Automate and n8n workflows. 6 skills in active development. Documentation-driven (no hallucinations). Power Automate: 4 connectors complete. n8n: Core nodes complete. Make/Zapier: Not yet supported. Contributions, issues, and forks welcome!",
-      "version": "0.1.0",
+      "version": "0.1.0-alpha",
       "author": {
         "name": "MacroMan5",
         "email": "[email protected]"

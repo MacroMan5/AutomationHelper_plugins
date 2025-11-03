@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-blue)](https://claude.com/code)
-[![Version](https://img.shields.io/badge/version-0.1.0--alpha-orange)](https://github.com/therouxe/automation-helper/releases)
+[![Version](https://img.shields.io/badge/version-0.1.0--alpha-orange)](https://github.com/MacroMan5/AutomationHelper_plugins/releases)
 [![Status](https://img.shields.io/badge/status-in%20development-yellow)]()
 
 > **AI assistant for Power Automate and n8n workflows** - Help design, build, debug, and refactor automation workflows with Claude Code.
@@ -200,12 +200,12 @@ Docs/
 - Performance needs optimization
 - Sub Agent doesnt seem to be invoked as much
 
-**See [Issues](https://github.com/therouxe/automation-helper/issues) for full list**
+**See [Issues](https://github.com/MacroMan5/AutomationHelper_plugins/issues) for full list**
 
 ## Getting Help
 
-- **Issues**: [Report bugs](https://github.com/therouxe/automation-helper/issues)
-- **Discussions**: [Ask questions](https://github.com/therouxe/automation-helper/discussions)
+- **Issues**: [Report bugs](https://github.com/MacroMan5/AutomationHelper_plugins/issues)
+- **Discussions**: [Ask questions](https://github.com/MacroMan5/AutomationHelper_plugins/discussions)
 - **Email**: [email protected]
 
 ## Roadmap
