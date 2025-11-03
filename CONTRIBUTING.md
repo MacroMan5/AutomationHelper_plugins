@@ -1,6 +1,6 @@
-# Contributing to Workflow Automation Suite
+# Contributing to Automation Helper
 
-Thank you for considering contributing to the Workflow Automation Suite! This document provides guidelines and instructions for contributing.
+Thank you for considering contributing to the Automation Helper! This document provides guidelines and instructions for contributing.
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ Before creating bug reports, please check existing issues to avoid duplicates.
 - Expected behavior
 - Actual behavior
 - Claude Code version (`claude --version`)
-- Plugin version (`/plugin info workflow-automation-suite`)
+- Plugin version (`/plugin info automation-helper`)
 - Operating system
 - Error messages or logs
 
@@ -68,7 +68,7 @@ What actually happened.
 
 **Environment**
 - Claude Code: 2.0.13
-- Plugin: 1.0.0
+- Plugin: 0.1.0-alpha
 - OS: macOS 14.2
 
 **Error Messages**
@@ -118,8 +118,8 @@ See [Contributing Documentation](#contributing-documentation) below.
 
 ```bash
 # Fork the repository on GitHub, then:
-git clone https://github.com/YOUR-USERNAME/workflow-automation-suite.git
-cd workflow-automation-suite
+git clone https://github.com/YOUR-USERNAME/AutomationHelper_plugins.git
+cd AutomationHelper_plugins
 ```
 
 #### 2. Create Development Marketplace
@@ -138,8 +138,8 @@ cat > ~/dev-marketplace/.claude-plugin/marketplace.json << 'EOF'
   },
   "plugins": [
     {
-      "name": "workflow-automation-suite",
-      "source": "/FULL/PATH/TO/workflow-automation-suite",
+      "name": "automation-helper",
+      "source": "/FULL/PATH/TO/AutomationHelper_plugins",
       "description": "Local development version"
     }
   ]
@@ -152,7 +152,7 @@ EOF
 ```bash
 # In Claude Code
 /plugin marketplace add ~/dev-marketplace
-/plugin install workflow-automation-suite@dev-marketplace
+/plugin install automation-helper@dev-marketplace
 ```
 
 #### 4. Test Your Changes
@@ -161,8 +161,8 @@ After making changes:
 
 ```bash
 # Uninstall and reinstall to test
-/plugin uninstall workflow-automation-suite
-/plugin install workflow-automation-suite@dev-marketplace
+/plugin uninstall automation-helper
+/plugin install automation-helper@dev-marketplace
 ```
 
 ### Creating a Branch
@@ -551,9 +551,9 @@ Closes #issue_number
 
 1. **Installation test:**
 ```bash
-/plugin marketplace add YOUR-FORK/workflow-automation-suite
-/plugin install workflow-automation-suite
-/plugin info workflow-automation-suite
+/plugin marketplace add YOUR-FORK/AutomationHelper_plugins
+/plugin install automation-helper
+/plugin info automation-helper
 ```
 
 2. **Skill activation test:**
@@ -602,8 +602,8 @@ Significant contributions may result in:
 
 ## Questions?
 
-- **GitHub Discussions:** [Ask questions](https://github.com/therouxe/workflow-automation-suite/discussions)
-- **GitHub Issues:** [Report bugs](https://github.com/therouxe/workflow-automation-suite/issues)
+- **GitHub Discussions:** [Ask questions](https://github.com/MacroMan5/AutomationHelper_plugins/discussions)
+- **GitHub Issues:** [Report bugs](https://github.com/MacroMan5/AutomationHelper_plugins/issues)
 - **Email:** [email protected]
 
 ## License

@@ -51,7 +51,7 @@ This plugin adds 6 AI skills to Claude Code that help you work with automation w
 /plugin marketplace add MacroMan5/AutomationHelper_plugins
 
 # Install plugin
-/plugin install AutomationHelper_plugins
+/plugin install automation-helper
 ```
 
 ## Quick Example

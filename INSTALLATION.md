@@ -30,12 +30,12 @@ This is the easiest and recommended method for most users.
 In Claude Code (terminal or VS Code), run:
 
 ```bash
-/plugin marketplace add therouxe/workflow-automation-suite
+/plugin marketplace add MacroMan5/AutomationHelper_plugins
 ```
 
 **Expected output:**
 ```
-✓ Marketplace 'workflow-automation-marketplace' added successfully
+✓ Marketplace 'automation-helper-marketplace' added successfully
 ✓ Found 1 plugin available
 ```
 
@@ -46,12 +46,12 @@ In Claude Code (terminal or VS Code), run:
 ```
 
 You'll see the plugin in the list:
-- **workflow-automation-suite** - Complete workflow automation toolkit
+- **automation-helper** - AI assistant for Power Automate and n8n workflows
 
 #### Step 3: Install the Plugin
 
 ```bash
-/plugin install workflow-automation-suite
+/plugin install automation-helper
 ```
 
 **Expected output:**
@@ -71,7 +71,7 @@ You'll see the plugin in the list:
 You should see:
 ```
 Installed plugins:
-  - workflow-automation-suite (v1.0.0)
+  - automation-helper (v0.1.0-alpha)
 ```
 
 ### Method 2: Direct GitHub URL
@@ -79,8 +79,8 @@ Installed plugins:
 If you prefer to specify the full URL:
 
 ```bash
-/plugin marketplace add https://github.com/therouxe/workflow-automation-suite.git
-/plugin install workflow-automation-suite
+/plugin marketplace add https://github.com/MacroMan5/AutomationHelper_plugins.git
+/plugin install automation-helper
 ```
 
 ### Method 3: Local Development Installation
@@ -90,8 +90,8 @@ For testing or development:
 #### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/therouxe/workflow-automation-suite.git
-cd workflow-automation-suite
+git clone https://github.com/MacroMan5/AutomationHelper_plugins.git
+cd AutomationHelper_plugins
 ```
 
 #### Step 2: Create Local Marketplace
@@ -114,8 +114,8 @@ Create `~/dev-marketplace/.claude-plugin/marketplace.json`:
   },
   "plugins": [
     {
-      "name": "workflow-automation-suite",
-      "source": "/full/path/to/workflow-automation-suite",
+      "name": "automation-helper",
+      "source": "/full/path/to/AutomationHelper_plugins",
       "description": "Local development version"
     }
   ]
@@ -126,7 +126,7 @@ Create `~/dev-marketplace/.claude-plugin/marketplace.json`:
 
 ```bash
 /plugin marketplace add ~/dev-marketplace
-/plugin install workflow-automation-suite@dev-marketplace
+/plugin install automation-helper@dev-marketplace
 ```
 
 ## Team Installation
@@ -142,10 +142,10 @@ In your team's project repository, create or edit `.claude/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "workflow-automation": {
+    "automation-helper-marketplace": {
       "source": {
         "source": "github",
-        "repo": "therouxe/workflow-automation-suite"
+        "repo": "MacroMan5/AutomationHelper_plugins"
       }
     }
   }
@@ -156,7 +156,7 @@ In your team's project repository, create or edit `.claude/settings.json`:
 
 ```bash
 git add .claude/settings.json
-git commit -m "Add Workflow Automation Suite plugin to team configuration"
+git commit -m "Add Automation Helper plugin to team configuration"
 git push
 ```
 
@@ -190,7 +190,7 @@ The plugin will be automatically installed and ready to use.
 Expected output:
 ```
 Installed plugins:
-  - workflow-automation-suite (v1.0.0)
+  - automation-helper (v0.1.0-alpha)
     Skills: 6
     Agents: 4
     Status: Active
@@ -201,7 +201,7 @@ Installed plugins:
 The skills don't appear in a command list but activate automatically based on your language. To verify they're available, check the plugin details:
 
 ```bash
-/plugin info workflow-automation-suite
+/plugin info automation-helper
 ```
 
 ### 3. Test a Skill
@@ -274,8 +274,8 @@ Skills automatically reference this documentation to provide accurate, hallucina
 To update to the latest version:
 
 ```bash
-/plugin uninstall workflow-automation-suite
-/plugin install workflow-automation-suite
+/plugin uninstall automation-helper
+/plugin install automation-helper
 ```
 
 ### Auto-Update (Team Configuration)
@@ -289,11 +289,11 @@ If installed via team configuration (`.claude/settings.json`), updates happen au
 
 ### Plugin Not Found
 
-**Problem**: `/plugin install workflow-automation-suite` fails with "Plugin not found"
+**Problem**: `/plugin install automation-helper` fails with "Plugin not found"
 
 **Solution**:
 1. Verify marketplace is added: `/plugin marketplace list`
-2. If not listed, add it: `/plugin marketplace add therouxe/workflow-automation-suite`
+2. If not listed, add it: `/plugin marketplace add MacroMan5/AutomationHelper_plugins`
 3. Refresh marketplace: `/plugin marketplace refresh`
 4. Try installation again
 
@@ -303,7 +303,7 @@ If installed via team configuration (`.claude/settings.json`), updates happen au
 
 **Solution**:
 1. Verify plugin is active: `/plugin list`
-2. If not active, enable it: `/plugin enable workflow-automation-suite`
+2. If not active, enable it: `/plugin enable automation-helper`
 3. Try using explicit trigger phrases like "I want to optimize this workflow"
 4. Check Claude Code debug mode: `claude --debug`
 
@@ -312,10 +312,10 @@ If installed via team configuration (`.claude/settings.json`), updates happen au
 **Problem**: "Agent not found" or agent errors
 
 **Solution**:
-1. Verify agents are loaded: `/plugin info workflow-automation-suite`
+1. Verify agents are loaded: `/plugin info automation-helper`
 2. Check for file path errors in plugin.json
 3. Ensure `.claude/agents/` directory exists with .md files
-4. Reinstall plugin: `/plugin uninstall workflow-automation-suite && /plugin install workflow-automation-suite`
+4. Reinstall plugin: `/plugin uninstall automation-helper && /plugin install automation-helper`
 
 ### Documentation Not Found
 
@@ -342,9 +342,9 @@ If installed via team configuration (`.claude/settings.json`), updates happen au
 **Problem**: Multiple versions or conflicting plugins
 
 **Solution**:
-1. Uninstall all versions: `/plugin uninstall workflow-automation-suite`
+1. Uninstall all versions: `/plugin uninstall automation-helper`
 2. Clear marketplace cache: `/plugin marketplace refresh`
-3. Reinstall specific version: `/plugin install workflow-automation-suite@1.0.0`
+3. Reinstall specific version: `/plugin install automation-helper@0.1.0-alpha`
 
 ## Uninstallation
 
@@ -354,10 +354,10 @@ To completely remove the plugin:
 
 ```bash
 # Uninstall plugin
-/plugin uninstall workflow-automation-suite
+/plugin uninstall automation-helper
 
 # Remove marketplace
-/plugin marketplace remove workflow-automation-marketplace
+/plugin marketplace remove automation-helper-marketplace
 
 # Verify removal
 /plugin list
@@ -372,13 +372,13 @@ If installed via team configuration, remove from `.claude/settings.json`:
 # Edit .claude/settings.json and remove the extraKnownMarketplaces entry
 # Then commit and push
 git add .claude/settings.json
-git commit -m "Remove Workflow Automation Suite plugin"
+git commit -m "Remove Automation Helper plugin"
 git push
 ```
 
 Team members will need to:
 1. Pull the changes
-2. Manually uninstall: `/plugin uninstall workflow-automation-suite`
+2. Manually uninstall: `/plugin uninstall automation-helper`
 
 ## Support
 
@@ -388,8 +388,8 @@ If you encounter issues:
 
 1. **Check logs**: Run Claude Code with `--debug` flag
 2. **Review documentation**: [CLAUDE.md](./CLAUDE.md)
-3. **Search issues**: [GitHub Issues](https://github.com/therouxe/workflow-automation-suite/issues)
-4. **Ask community**: [GitHub Discussions](https://github.com/therouxe/workflow-automation-suite/discussions)
+3. **Search issues**: [GitHub Issues](https://github.com/MacroMan5/AutomationHelper_plugins/issues)
+4. **Ask community**: [GitHub Discussions](https://github.com/MacroMan5/AutomationHelper_plugins/discussions)
 5. **Contact support**: [email protected]
 
 ### Reporting Bugs
@@ -397,7 +397,7 @@ If you encounter issues:
 When reporting issues, include:
 
 - Claude Code version: `claude --version`
-- Plugin version: `/plugin info workflow-automation-suite`
+- Plugin version: `/plugin info automation-helper`
 - Operating system
 - Installation method used
 - Error messages or logs
